@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>3FB4AC28-C45D-44CC-815A-32BB9D1E2AA8</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>TipCalculator</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>04511295CBEEB06A562B635247B14A5CAE13522E</key>
 		<string>github.com:iantsai220/TipCalculator.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>TipCalculator.xcodeproj/project.xcworkspace</string>
+	<string>TipCalculator.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>04511295CBEEB06A562B635247B14A5CAE13522E</key>

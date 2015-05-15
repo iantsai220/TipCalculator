@@ -22,6 +22,9 @@
     
     self.tipCalculator = [TipCalculator new];
     self.billAmount.delegate = self;
+    [self.tipSlider addTarget:self action:@selector(tipPercentageSlider:) forControlEvents:UIControlEventValueChanged];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,11 +37,17 @@
     return YES;
 }
 
+-(IBAction)tipPercentageSlider:(id)sender {
+    
+    
+    self.tipPercentage.text = [NSString stringWithFormat:@"%.2f", self.tipSlider.value];
+}
+
 
 
 - (IBAction)tipCalculatorButton:(UIButton *)sender {
     
-    [self.tipPercentage resignFirstResponder];
+    
     //take bill amount
     CGFloat tipAmount = [self.tipCalculator calculateTip:self.billAmount.text tipPercent:self.tipPercentage.text];
     //parse string to float value
@@ -46,7 +55,21 @@
     //display on label
     self.tipAmountLabel.text = [NSString stringWithFormat:@"$ %.2f", tipAmount];
     
+    [self.tipPercentage resignFirstResponder];
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @end
